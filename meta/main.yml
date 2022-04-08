@@ -1,0 +1,19 @@
+galaxy_info:
+  author: coaxial
+  namespace: coaxial
+  description: Sets up Radarr
+  role_name: radarr
+
+  license: MIT
+
+  min_ansible_version: 5.0.6
+
+  platforms:
+    - name: ubuntu
+      versions:
+        - focal
+        - bionic
+
+  galaxy_tags: [radarr, mediarr]
+
+dependencies: []
