@@ -27,7 +27,7 @@
   notify:
     - Restart NGINX
 
-- name: Configure Radarr for NGINX
+- name: Configure NGINX for Radarr
   ansible.builtin.copy:
     src: "{{ item.file }}"
     dest: "{{ item.dest }}"

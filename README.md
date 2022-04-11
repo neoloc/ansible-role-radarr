@@ -1,5 +1,14 @@
 # Radarr role
 
+[![CI](https://github.com/coaxial/ansible-role-radarr/actions/workflows/ci.yml/badge.svg)](https://github.com/coaxial/ansible-role-radarr/actions/workflows/ci.yml)
+
+Galaxy: https://galaxy.ansible.com/coaxial/radarr
+
+## Instructions
+
+This role will install Radarr and (optionally) install and configure NGINX to
+serve the UI at `<server address>/radarr`.
+
 ## Variables and their defaults
 
 | variable name               | default value     | description                                                                             |
