@@ -62,13 +62,33 @@
   ansible.builtin.package:
     name: libicu60
     state: present
-  when: ansible_distribution_version == '18.04'
+  when:
+    - ansible_distribution_version == '18.04'
+    - ansible_distribution == 'Ubuntu'
 
 - name: Install libicu (Ubuntu 20.04)
   ansible.builtin.package:
     name: libicu66
     state: present
-  when: ansible_distribution_version == '20.04'
+  when:
+    - ansible_distribution_version == '20.04'
+    - ansible_distribution == 'Ubuntu'
+
+- name: Install libicu (Debian Buster)
+  ansible.builtin.package:
+    name: libicu63
+    state: present
+  when:
+    - ansible_distribution_version == '10'
+    - ansible_distribution == 'Debian'
+
+- name: Install libicu (Debian Bullseye)
+  ansible.builtin.package:
+    name: libicu67
+    state: present
+  when:
+    - ansible_distribution_version == '11'
+    - ansible_distribution == 'Debian'
 
 - name: Configure systemd
   ansible.builtin.template:

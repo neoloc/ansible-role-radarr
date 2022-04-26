@@ -1,13 +1,12 @@
 # Radarr role
 
-[![CI](https://github.com/coaxial/ansible-role-radarr/actions/workflows/ci.yml/badge.svg)](https://github.com/coaxial/ansible-role-radarr/actions/workflows/ci.yml)
+[![Ansible Galaxy](https://img.shields.io/badge/ansible--galaxy-neoloc.radarr-blue.svg)](https://galaxy.ansible.com/neoloc/ansible-role-radarr/)
 
-Galaxy: https://galaxy.ansible.com/coaxial/radarr
+Galaxy: https://galaxy.ansible.com/neoloc/radarr
 
 ## Instructions
 
-This role will install Radarr and (optionally) install and configure NGINX to
-serve the UI at `<server address>/radarr`.
+This role will install Radarr to serve the UI at `<server address>/radarr`.
 
 ## Variables and their defaults
 
@@ -20,4 +19,7 @@ serve the UI at `<server address>/radarr`.
 | radarr\_\_group             | `media`           | Radarr user's group                                                                     |
 | radarr\_\_group_id          | `1100`            | The GID for Radarr's group                                                              |
 | radarr\_\_version           | `latest` (stable) | See https://github.com/Radarr/Radarr/releases                                           |
-| radarr\_\_use_nginx         | `yes`             | Whether to install and configure nginx (`no` if you're installing/managing it yourself) |
+
+## Original Author
+
+Galaxy: https://galaxy.ansible.com/coaxial/radarr
