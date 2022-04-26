@@ -1,7 +1,0 @@
----
-- name: Converge
-  hosts: all
-  tasks:
-    - name: "Include coaxial.radarr"
-      ansible.builtin.include_role:
-        name: "coaxial.radarr"
